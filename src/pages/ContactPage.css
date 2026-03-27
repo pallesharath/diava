@@ -1,0 +1,61 @@
+/* ─── CONTACT PAGE ────────────────────────────────────── */
+.contact-page {
+  padding: 80px 60px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-page__title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 4vw, 52px);
+  color: #0c3520;
+  font-weight: 900;
+  margin: 16px 0 36px;
+}
+.contact-page__title span { color: #2d9a5b; }
+
+.contact-list { display: flex; flex-direction: column; gap: 20px; }
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 24px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1.5px solid #e0f0e8;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+  transition: box-shadow 0.2s;
+}
+.contact-card:hover { box-shadow: 0 8px 28px rgba(26,107,58,.12); }
+
+.contact-card__icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+
+.contact-card__label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a6b3a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.contact-card__value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #2a4a2a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-card__value--link {
+  color: #1a6b3a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-card__value--link:hover { color: #2d9a5b; text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .contact-page { padding: 52px 20px; }
+}

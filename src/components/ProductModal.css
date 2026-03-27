@@ -1,0 +1,161 @@
+/* ─── PRODUCT DETAIL MODAL ────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+  backdrop-filter: blur(7px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 26px;
+  max-width: 620px;
+  width: 100%;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.32);
+  animation: slideUp 0.3s ease;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.modal__header {
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 26px 26px 0 0;
+}
+
+.modal__emoji { font-size: 60px; flex-shrink: 0; }
+
+.modal__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.modal__category-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #f9e46a;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.modal__body { padding: 28px 32px; }
+
+.modal__price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #2d9a5b;
+  margin-bottom: 16px;
+}
+
+.modal__desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #556655;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.modal__info-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.modal__info-box {
+  background: #f0faf4;
+  border-radius: 11px;
+  padding: 13px 16px;
+  flex: 1;
+  min-width: 130px;
+  border: 1.5px solid #d0f0de;
+}
+
+.modal__info-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a6b3a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.modal__info-val {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #2a4a2a;
+  font-weight: 500;
+}
+
+.modal__benefits-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: #0c3520;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.modal__benefits-wrap {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.modal__benefit-chip {
+  background: #e8f8ee;
+  color: #1a6b3a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 18px;
+  border: 1.5px solid #b8e6ca;
+}
+
+.modal__actions { display: flex; gap: 12px; }
+
+.modal__btn-close {
+  flex: 1;
+  background: #f0faf4;
+  color: #1a6b3a;
+  border: 2.5px solid #1a6b3a;
+  padding: 14px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.modal__btn-close:hover { background: #1a6b3a; color: #fff; }
+
+.modal__btn-order {
+  flex: 2;
+  background: linear-gradient(135deg, #1a6b3a, #2d9a5b);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.modal__btn-order:hover { opacity: 0.9; }

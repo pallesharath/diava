@@ -1,0 +1,142 @@
+/* ─── ADMIN DASHBOARD SHELL ───────────────────────────── */
+.admin-dash {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: #0f1f14;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top bar ─────────────────────────────────────────── */
+.admin-dash__topbar {
+  background: linear-gradient(135deg, #0c3520, #1a6b3a);
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.admin-dash__brand { display: flex; align-items: center; gap: 14px; }
+
+.admin-dash__logo {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.admin-dash__brand-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f9e46a;
+  letter-spacing: 1.5px;
+}
+
+.admin-dash__topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-dash__user {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.admin-dash__exit-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9px;
+  padding: 8px 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.admin-dash__exit-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* ── Tabs ────────────────────────────────────────────── */
+.admin-dash__tabs {
+  background: #152c1e;
+  padding: 0 32px;
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #1e3528;
+  flex-shrink: 0;
+}
+
+.admin-dash__tab {
+  background: transparent;
+  border: none;
+  padding: 16px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2.5px solid transparent;
+  transition: all 0.2s;
+}
+.admin-dash__tab:hover { color: rgba(255, 255, 255, 0.9); }
+
+.admin-dash__tab--active {
+  color: #f9e46a;
+  font-weight: 700;
+  border-bottom-color: #f9e46a;
+  background: rgba(249, 228, 106, 0.04);
+}
+
+.admin-dash__tab-count {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.admin-dash__tab-count--active {
+  background: rgba(249, 228, 106, 0.25);
+  color: #f9e46a;
+}
+
+/* ── Content area ────────────────────────────────────── */
+.admin-dash__content {
+  flex: 1;
+  padding: 36px 32px;
+  overflow-y: auto;
+}
+
+/* ── Toast ───────────────────────────────────────────── */
+.admin-toast {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 9999;
+  animation: toastIn 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.admin-toast--ok  { background: #1a6b3a; }
+.admin-toast--err { background: #c0392b; }
+
+@media (max-width: 640px) {
+  .admin-dash__topbar { padding: 0 16px; }
+  .admin-dash__brand-label { display: none; }
+  .admin-dash__tabs { padding: 0 8px; overflow-x: auto; }
+  .admin-dash__tab  { padding: 12px 14px; font-size: 13px; }
+  .admin-dash__content { padding: 20px 16px; }
+}

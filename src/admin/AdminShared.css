@@ -1,0 +1,291 @@
+/* ─── SHARED ADMIN STYLES ─────────────────────────────── */
+
+/* ── Section header ──────────────────────────────────── */
+.adm-section-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.adm-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e8f5ee;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+.adm-btn {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.adm-btn--green  { background: #1a6b3a; color: #fff; }
+.adm-btn--green:hover  { background: #2d9a5b; }
+.adm-btn--red    { background: #c0392b; color: #fff; }
+.adm-btn--red:hover    { background: #e74c3c; }
+.adm-btn--edit   { background: #1a3d28; color: #6ddc9a; border: 1px solid #2d9a5b; padding: 6px 14px; }
+.adm-btn--edit:hover { background: #2d9a5b; color: #fff; }
+.adm-btn--cancel { flex: 1; background: #f0f0f0; color: #555; }
+.adm-btn--cancel:hover { background: #e0e0e0; }
+.adm-btn--wide   { flex: 2; }
+
+.adm-action-btns { display: flex; gap: 8px; }
+
+/* ── Table ───────────────────────────────────────────── */
+.adm-table-wrap {
+  background: #152c1e;
+  border-radius: 16px;
+  border: 1px solid #1e3528;
+  overflow: hidden;
+}
+.adm-table { width: 100%; border-collapse: collapse; }
+.adm-table th {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6aa880;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 13px 16px;
+  text-align: left;
+  border-bottom: 1.5px solid #1e3528;
+}
+.adm-table td {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #d0e8da;
+  padding: 13px 16px;
+  border-bottom: 1px solid #1a2e20;
+  vertical-align: middle;
+}
+.adm-table tr:last-child td { border-bottom: none; }
+.adm-table tr:hover td { background: rgba(45, 154, 91, 0.06); }
+.adm-table__name  { font-weight: 600; color: #fff; }
+.adm-table__price { color: #6ddc9a; font-weight: 600; }
+.adm-table__muted { color: #9abfaa; }
+
+.adm-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ── Category grid ───────────────────────────────────── */
+.adm-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+.adm-cat-card {
+  background: #152c1e;
+  border-radius: 14px;
+  border: 1px solid #1e3528;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.adm-cat-card__icon-wrap {
+  width: 54px; height: 54px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.adm-cat-card__info { flex: 1; }
+.adm-cat-card__name  { font-family: 'Poppins', sans-serif; font-weight: 700; color: #fff; font-size: 16px; }
+.adm-cat-card__count { font-family: 'Poppins', sans-serif; font-size: 12px; color: #6aa880; margin-top: 3px; }
+
+/* ── Ads list ────────────────────────────────────────── */
+.adm-ads-list { display: flex; flex-direction: column; gap: 16px; }
+.adm-ad-card {
+  background: #152c1e;
+  border-radius: 14px;
+  border: 1px solid #1e3528;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.adm-ad-card__icon {
+  width: 54px; height: 54px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a6b3a, #2d9a5b);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.adm-ad-card__info { flex: 1; }
+.adm-ad-card__title { font-family: 'Poppins', sans-serif; font-weight: 700; color: #fff; font-size: 16px; }
+.adm-ad-card__desc  { font-family: 'Poppins', sans-serif; font-size: 13px; color: #9abfaa; margin-top: 4px; }
+
+/* ── Empty state ─────────────────────────────────────── */
+.adm-empty {
+  text-align: center;
+  padding: 40px;
+  color: #6aa880;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+/* ── Form elements ───────────────────────────────────── */
+.adm-row   { display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
+.adm-field { display: flex; flex-direction: column; flex: 1; min-width: 160px; }
+.adm-field--small { flex: 0 0 84px; min-width: 84px; }
+
+.adm-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a6b3a;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.adm-input {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 13px;
+  border-radius: 9px;
+  border: 1.5px solid #d0ddd5;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+  background: #fff;
+  box-sizing: border-box;
+}
+.adm-input:focus { border-color: #1a6b3a; }
+.adm-input--emoji { font-size: 26px; text-align: center; padding: 6px 0; }
+.adm-textarea { resize: vertical; line-height: 1.5; }
+
+.adm-color-row { display: flex; gap: 8px; align-items: center; }
+.adm-color-swatch {
+  width: 44px; height: 40px;
+  border: 1.5px solid #d0ddd5;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Category live preview ───────────────────────────── */
+.adm-cat-preview {
+  background: #f0faf4;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.adm-cat-preview__icon {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+
+/* ── Ad live preview ─────────────────────────────────── */
+.adm-ad-preview {
+  background: linear-gradient(135deg, #fffef8, #fef8e2);
+  border: 4px solid #c8932a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.adm-ad-preview__icon   { font-size: 36px; }
+.adm-ad-preview__divider {
+  width: 40px; height: 3px;
+  background: linear-gradient(90deg, #1a6b3a, #f9e46a);
+  border-radius: 2px;
+}
+.adm-ad-preview__title  { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 900; color: #1a6b3a; }
+.adm-ad-preview__desc   { font-family: 'Poppins', sans-serif; font-size: 12px; color: #4a6a55; }
+
+/* ── Modal overlay ───────────────────────────────────── */
+.adm-modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.adm-modal {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.25s ease;
+}
+.adm-modal--sm { max-width: 460px; }
+.adm-modal__hdr {
+  background: linear-gradient(135deg, #1a6b3a, #2d9a5b);
+  padding: 20px 28px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adm-modal__title { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; color: #fff; }
+.adm-modal__close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.adm-modal__close:hover { opacity: 1; }
+.adm-modal__body { padding: 28px; }
+.adm-modal__actions { display: flex; gap: 12px; }
+
+/* ── Confirm dialog ──────────────────────────────────── */
+.adm-confirm-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adm-confirm {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  max-width: 360px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+.adm-confirm__msg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #0c3520;
+  font-weight: 500;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+.adm-confirm__actions { display: flex; gap: 12px; }
