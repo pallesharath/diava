@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+console.log("HELLO NETLIFY UPDATE");
 
 // Data
 import { INIT_PRODUCTS }   from './data/products';
