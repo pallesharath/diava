@@ -20,14 +20,23 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 22px 24px;
+  padding: 18px 16px;
   background: #fff;
   border-radius: 16px;
-  border: 1.5px solid #e0f0e8;
+  border: 1px solid #e0f0e8;
   box-shadow: 0 4px 16px rgba(0,0,0,.06);
   transition: box-shadow 0.2s;
+  width: 100%;
 }
 .contact-card:hover { box-shadow: 0 8px 28px rgba(26,107,58,.12); }
+
+@media (max-width: 480px) {
+  .contact-card { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px; }
+  .contact-card__icon { margin-top: 0; font-size: 26px; }
+  .contact-card__label { font-size: 10px; margin-bottom: 4px; }
+  .contact-card__value { font-size: 14px; }
+}
+
 
 .contact-card__icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
 
