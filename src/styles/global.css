@@ -160,3 +160,21 @@ body {
 * {
   box-sizing: border-box;
 }
+
+
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

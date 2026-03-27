@@ -1,9 +1,7 @@
 /* ─── NAVBAR ──────────────────────────────────────────── */
 .navbar {
   background: linear-gradient(135deg, #1a6b3a, #2d9a5b);
-  .navbar {
   padding: 0 16px;
-}
   height: 70px;
   display: flex;
   align-items: center;
@@ -25,11 +23,18 @@
 .navbar__links {
   display: flex;
   gap: 6px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.navbar__links::-webkit-scrollbar { display: none; }
 
 .navbar__link {
   color: rgba(255, 255, 255, 0.88);
-  padding: 8px 20px;
+  padding: 8px 16px;
   border-radius: 25px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;

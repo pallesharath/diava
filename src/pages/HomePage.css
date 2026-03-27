@@ -242,3 +242,26 @@
 @media (max-width: 600px) {
   .home-products { padding: 60px 18px; }
 }
+
+@media (max-width: 640px) {
+  .hero { padding: 40px 14px; }
+  .hero__left { padding: 28px 14px 20px; }
+  .hero__right { padding: 20px 14px; min-height: auto; }
+  .hero__sub { max-width: 100%; }
+  .home-products { padding: 60px 14px; }
+  .home-products__grid { grid-template-columns: 1fr; gap: 16px; }
+  .ad-board-outer { width: min(100%, 340px); }
+}
+
+@media (max-width: 480px) {
+  .hero__tag { font-size: 11px; padding: 4px 10px; }
+  .hero__title { font-size: clamp(32px, 10vw, 46px); }
+  .hero__btns { gap: 8px; }
+  .btn-primary, .btn-outline { width: 100%; }
+}
+
+.hero {
+  width: 100%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
